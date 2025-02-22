@@ -8,8 +8,8 @@ import 'animate.css';
 import PageLoading from '@/components/Loading/PageLoading';
 
 export const metadata: Metadata = {
-  title: 'Alpha',
-  description: 'Alpha'
+  title: 'LENZCLOGS',
+  description: 'LENZCLOGS'
 };
 
 export default function RootLayout({

@@ -166,7 +166,7 @@ const ProductNav: FC = () => {
           className=" hidden text-sm font-bold cursor-pointer px-4 py-1 text-main-400 md:flex  items-center justify-between gap-4 rounded-md"
           href="/"
         >
-          LENZCLOGZ
+          LENZCLOGS
         </Link>
 
         <Search

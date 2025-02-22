@@ -37,6 +37,10 @@ const config: Config = {
           200: '#A5C9CA',
           300: '#395B64',
           400: '#2C3333'
+        },
+        newmain: {
+          100: '#6D0419',
+          300: '#1D1B1D'
         }
       },
       fontFamily: {

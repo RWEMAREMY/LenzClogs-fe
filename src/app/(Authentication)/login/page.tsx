@@ -210,7 +210,7 @@ export default function Home() {
           Or create an account?{' '}
           <Link
             href="/register"
-            className="text-main-400 font-bold hover:underline hover:font-extrabold"
+            className="text-main-700 font-bold hover:underline hover:font-extrabold"
           >
             register
           </Link>

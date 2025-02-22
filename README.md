@@ -1,18 +1,4 @@
-![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-%23438DBE.svg?style=for-the-badge&logo=next.js&logoColor=white)
-![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
-![CircleCI](https://img.shields.io/badge/CircleCI-%23333399.svg?style=for-the-badge&logo=circleci&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-%235D81BC.svg?style=for-the-badge&logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/Prettier-%237014DA.svg?style=for-the-badge&logo=prettier&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-%236D5177.svg?style=for-the-badge&logo=jest&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![CodeClimate](https://img.shields.io/badge/CodeClimate-B.svg?style=for-the-badge&logo=codeclimate&logoColor=EED123)
-![Redux](https://img.shields.io/badge/redux-%23532F62.svg?style=for-the-badge&logo=redux&logoColor=white)
-
-
-
 <a name="readme-top"></a>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents

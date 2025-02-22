@@ -73,7 +73,7 @@ const MainNav: FC = () => {
           className="text-sm font-bold cursor-pointer px-4 py-1 text-main-400 flex items-center justify-between gap-4 rounded-md"
           href="/"
         >
-          LENZCLOGZ
+          LENZCLOGS
         </Link>
         <div className="hidden md:flex justify-between w-min gap-4">
           {TOP_MENUS.map((menu, index) => {
