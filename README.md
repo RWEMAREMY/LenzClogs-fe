@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -91,7 +92,6 @@ The project uses:
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

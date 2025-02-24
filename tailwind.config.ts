@@ -40,7 +40,7 @@ const config: Config = {
         },
         newmain: {
           100: '#6D0419',
-          300: '#1D1B1D'
+          200: '#1D1B1D'
         }
       },
       fontFamily: {

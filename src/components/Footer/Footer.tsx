@@ -47,11 +47,11 @@ const Footer: FC = () => {
             </li>
             <li className="flex items-center gap-2">
               <FaPhoneAlt />
-              (+250) 780 111 110
+              (+250) 786912010
             </li>
             <li className="flex items-center gap-2">
               <MdOutlineEmail />
-              alphaatlpcohort29@gmail.com
+              lenzclogs24@gmail.com
             </li>
           </ul>
         </div>
@@ -95,7 +95,7 @@ const Footer: FC = () => {
         </div>
       </div>
       <nav className="w-full bg-main-200 text-xs sm:text-sm md:text-md flex justify-center text-main-400 items-center p-3 gap-2">
-        © 2024 ATLP -29 Designed by TeamAlpha
+        © 2025 LENZCLOGS
       </nav>
     </div>
   );
