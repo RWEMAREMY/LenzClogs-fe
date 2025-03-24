@@ -135,7 +135,7 @@ const SideNav: React.FC<SideNavProps1> = ({ className }) => {
     >
       <div>
         <Link href="/">
-          <h1 className="text-2xl font-bold text-[#32475C]">alpha-team</h1>
+          <h1 className="text-2xl font-bold text-[#32475C]">LENZCLOGS</h1>
         </Link>
       </div>
       <nav className="space-y-4 pl-[-38px] text-black z-99">

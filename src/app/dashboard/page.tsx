@@ -22,7 +22,7 @@ export default function AdminPanel() {
           Welcome, {profile?.data?.name || ''}
         </h1>
         <p className="py-7 text-xm w-2/3">
-          Alpha-Market is excited, to have you back! Explore your dashboard for
+          LENZCLOGS is excited, to have you back! Explore your dashboard for the
           the latest updates and features.
         </p>
       </div>
