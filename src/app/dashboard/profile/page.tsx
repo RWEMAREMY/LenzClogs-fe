@@ -70,11 +70,11 @@ const ProfileView: React.FC = () => {
   return (
     <div>
       <div className="w-full flex align-middle ">
-        <div className="flex font-extrabold text-main-400 text-3xl md:text-4xl lg:text-4xl mb-4 mx-auto">
+        <div className="flex font-extrabold text-main-400 text-3xl md:text-4xl lg:text-4xl mb-4 mx-auto underline">
           My Profile
         </div>
       </div>
-      <div className=" flex md:flex lg:flex flex-col md:flex-row lg:flex-row w-full align-middle ">
+      <div className=" flex md:flex lg:flex flex-col md:flex-row lg:flex-row w-full align-middle bg-main-300 rounded   ">
         <div className=" flex w-full mt-[-80px] md:mt-[0px] lg:mt-[0px] md:w-[30%] lg:w-[30%] align-middle">
           <div className=" mx-auto mt-[25%] w-[180px] rounded-full ">
             <Image
@@ -87,7 +87,7 @@ const ProfileView: React.FC = () => {
           </div>
         </div>
 
-        <div className=" w-full md:w-2/3 lg:w-2/3 px-4 md:px-0 lg:px-0 flex flex-col align-middle animate__animated animate__backInLeft ">
+        <div className=" -full md:w-2/3 lg:w-2/3 px-4 md:px-0 lg:px-0 flex flex-col align-middle animate__animated animate__backInLeft ">
           <div className="w-full mt-2 flex flex-col gap-1 animate__animated animate__fadeInDown">
             <Input
               type="text"
@@ -99,7 +99,7 @@ const ProfileView: React.FC = () => {
               readOnly
             />
           </div>
-          <div className="w-full mt-2 flex flex-col gap-1 animate__animated animate__fadeInDown">
+          <div className="w-full mt-2 flex flex-col gap-1 animate__animated animate__fadeInDown ">
             <Input
               type="text"
               value={email}
@@ -143,7 +143,7 @@ const ProfileView: React.FC = () => {
               readOnly
             />
           </div>
-          <div className="w-full mt-2 flex flex-col gap-1 animate__animated animate__fadeInDown">
+          <div className="w-full mt-2 flex flex-col gap-1 animate__animated animate__fadeInDown text-white  ">
             <Input
               type="date"
               value={birthdate ? birthdate : ''}
