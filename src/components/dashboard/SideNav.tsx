@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FiHome, FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { BiSolidCategoryAlt } from 'react-icons/bi';
 import { MdOutlineManageAccounts } from 'react-icons/md';
 import { FcStatistics } from 'react-icons/fc';
 import { AiOutlineProduct } from 'react-icons/ai';
@@ -213,6 +214,10 @@ const SideNav: React.FC<SideNavProps1> = ({ className }) => {
               <SidebarButton paths={['/dashboard/users']}>
                 <RiAccountCircleLine className="text-xl" />
                 <p className="text-nowrap">Users</p>
+              </SidebarButton>
+              <SidebarButton paths={['/dashboard/categories']}>
+                <BiSolidCategoryAlt className="text-xl" />
+                <p className="text-nowrap">categories</p>
               </SidebarButton>
             </>
           )}
