@@ -63,7 +63,7 @@ const Footer: FC = () => {
 
           <ul className="flex flex-col text-xs sm:text-sm md:text-md font-light gap-2">
             {data &&
-              data.slice(0, 5).map((itm, index) => (
+              data.slice(0, 3).map((itm, index) => (
                 <li
                   className="flex items-center gap-2 hover:underline cursor:pointer"
                   key={index}
@@ -82,7 +82,7 @@ const Footer: FC = () => {
 
           <ul className="flex flex-col text-xs sm:text-sm md:text-md font-light gap-2">
             {categoriesData &&
-              categoriesData.slice(0, 5).map((itm, index) => (
+              categoriesData.slice(0, 3).map((itm, index) => (
                 <li
                   className="flex items-center gap-2 hover:underline cursor:pointer"
                   key={index}
