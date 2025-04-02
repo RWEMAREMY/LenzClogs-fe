@@ -367,7 +367,7 @@ const Details = () => {
                 </h2>
               </span>
               <span className="font-semibold text-xl text-main-400 flex items-center gap-2 min-h-12 px-2 w-min truncate rounded-md shadow-md">
-                ${' '}
+                RWF{' '}
                 {selectedProduct.product.bonus
                   ? (
                       selectedProduct.product.price -
@@ -378,7 +378,7 @@ const Details = () => {
                   : selectedProduct.product.price.toLocaleString()}
                 {selectedProduct.product.bonus && (
                   <p className="font-thin text-base line-through">
-                    $ {selectedProduct.product.price.toLocaleString()}
+                    RWF {selectedProduct.product.price.toLocaleString()}
                   </p>
                 )}
               </span>
@@ -431,7 +431,7 @@ const Details = () => {
                     />
                   </div>
                   <span className="font-semibold sm:text-base md:text-xl text-main-400 flex items-center gap-1 md:gap-2 min-h-9 sm:min-h-12 px-2 w-min truncate rounded-md">
-                    ${' '}
+                    RWF{' '}
                     {selectedProduct.product.bonus
                       ? (
                           (selectedProduct.product.price -

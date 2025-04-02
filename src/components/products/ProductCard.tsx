@@ -177,7 +177,7 @@ const ProductCard: React.FC<ProductCard> = ({ product, styles }) => {
             </div>
             <div className="flex justify-between items-center overflow-hidden">
               <span className="font-black text-base text-main-400 flex items-center gap-2 truncate">
-                ${' '}
+                RWF{' '}
                 {product.bonus
                   ? (
                       product.price -
