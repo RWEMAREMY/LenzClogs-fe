@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../../redux/hooks/hook';
 import { fetchStats } from '@/redux/slices/stasticsSlice';
-import { ResponsiveContainer, PieChart, Pie, Legend } from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Legend, Cell } from 'recharts';
 import MyBarChart from '@/components/barchart/BarChart';
 
 const StatsPage = () => {
@@ -24,6 +24,8 @@ const StatsPage = () => {
     { name: 'Stock Reduction', value: stats?.stockReduction || 0 },
     { name: 'Products Wished', value: stats?.productWished || 0 }
   ];
+
+  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
 
   const barChartData = [
     { name: 'New Products', value: stats?.newProducts || 0 },
@@ -72,7 +74,23 @@ const StatsPage = () => {
           <div className="w-full h-[300px]">
             <ResponsiveContainer>
               <PieChart>
-                <Pie dataKey="value" data={pieChartData} fill="#395B64" label />
+                <Pie
+                  dataKey="value"
+                  data={pieChartData}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={4}
+                  outerRadius={120}
+                  fill="#8884d8"
+                  label
+                >
+                  {pieChartData.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={COLORS[index % COLORS.length]}
+                    />
+                  ))}
+                </Pie>
                 <Legend />
               </PieChart>
             </ResponsiveContainer>

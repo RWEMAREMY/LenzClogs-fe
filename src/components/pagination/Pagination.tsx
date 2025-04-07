@@ -41,15 +41,15 @@ const Pagination: React.FC<PaginationProps> = ({
 
     let startNumber, endNumber;
 
-    if (currentPage < 2) {
+    if (currentPage < 3) {
       startNumber = 1;
-      endNumber = Math.min(totalPages, currentPage + 2);
-    } else if (currentPage == totalPages) {
-      startNumber = Math.max(totalPages - 2, 1);
+      endNumber = Math.min(totalPages, 4);
+    } else if (currentPage > totalPages - 2) {
+      startNumber = Math.max(totalPages - 3, 1);
       endNumber = totalPages;
     } else {
       startNumber = currentPage - 1;
-      endNumber = currentPage + 1;
+      endNumber = currentPage + 2;
     }
 
     for (let i = startNumber; i <= endNumber; i++) {

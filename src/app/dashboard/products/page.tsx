@@ -37,7 +37,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     dispatch(showSideNav(true));
-    dispatch(getProducts({ page: 1 }));
+    dispatch(getProducts({ page: 1, limit: '4' }));
   }, [dispatch]);
 
   const { data, loading, error } = useSelector(
@@ -60,6 +60,7 @@ const Home: React.FC = () => {
     newParams.forEach((value, key) => {
       queryParamsObject[key] = value;
     });
+    queryParamsObject['limit'] = '4';
 
     router.push(`?${queryString}`);
     dispatch(getProducts(queryParamsObject));
@@ -162,21 +163,21 @@ const Home: React.FC = () => {
 
         <div className="flex justify-between gap-4 min-w-screen w-full z-0 pl-2">
           <section className="w-full flex flex-col gap-0 pt-0">
-            <div className="w-full p-1 rounded-lg overflow-y-auto mt-10">
+            <div className="w-full p-1 rounded-lg overflow-y-auto mt-0 bg-[#075F62]">
               {products?.length === 0 ? (
                 <NotFound />
               ) : (
-                <table className="min-w-full text-sm text-left mt-2">
+                <table className="min-w-full text-sm text-left mt-0">
                   <thead>
                     <tr>
-                      <th className="p-2 w-min">Image</th>
-                      <th className="hidden md:table-cell p-2 truncate">
+                      <th className="p-2 w-min text-[#E8E8E8]">Image</th>
+                      <th className="hidden md:table-cell p-2 truncate text-[#E8E8E8]">
                         Name
                       </th>
-                      <th className="p-2 truncate">Price</th>
-                      <th className="p-2 truncate">Quantity</th>
-                      <th className="p-2 truncate">Status</th>
-                      <th className="p-2 truncate">Action</th>
+                      <th className="p-2 truncate text-[#E8E8E8]">Price</th>
+                      <th className="p-2 truncate text-[#E8E8E8]">Quantity</th>
+                      <th className="p-2 truncate text-[#E8E8E8]">Status</th>
+                      <th className="p-2 truncate text-[#E8E8E8]">Action</th>
                     </tr>
                   </thead>
                   <tbody className="gap-2">
@@ -184,7 +185,7 @@ const Home: React.FC = () => {
                       products.map((product, i) => (
                         <tr
                           key={i}
-                          className="cursor-pointer text-gray-700 hover:bg-accent-200 hover:text-accent-900 bg-white rounded-md text-lg p-2 mb-2 border-b border-main-200"
+                          className="cursor-pointer rounded text-gray-700 hover:bg-accent-200 hover:scale-[1.004] hover:text-accent-900 bg-white  text-lg p-2 mb-4 border-b border-main-200"
                         >
                           <td className="hidden md:table-cell p-2 font-bold h-full overflow-hidden items-center">
                             <Image
@@ -202,7 +203,7 @@ const Home: React.FC = () => {
                             <GetStars rating={product.averageRatings || 0} />
                           </td>
                           <td className="p-2 truncate text-sm md:text-sm lg:text-lg font-bold">
-                            $ {product.price.toLocaleString()}
+                            RWF {product.price.toLocaleString()}
                           </td>
                           <td className="p-2 truncate">{product.quantity}</td>
                           <td
